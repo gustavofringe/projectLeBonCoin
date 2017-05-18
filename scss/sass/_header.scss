@@ -88,6 +88,9 @@ header
 tablet landscape format
 ===================================================================*/
 @media (min-width: 1024px) {
+  .site-content, .site-container{
+    overflow: hidden;
+  }
   .header{
     a{
       font-size: 14px;
@@ -140,9 +143,6 @@ tablet landscape format
       &:hover{
         text-decoration: none ;
       }
-    }
-    #none{
-      display: none;
     }
   }
 }
