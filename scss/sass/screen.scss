@@ -14,3 +14,30 @@ html, body{
   margin: 0;
   padding: 0;
 }
+.map {
+  width: 50%;
+  float: left;
+
+}
+.map path{
+  fill: #3D6ABE;
+  stroke: black;
+  stroke-miterlimit:10;
+  stroke-width:1px;
+  transition: fill 0.3s;
+
+}
+.map path:hover{
+  fill: #F56B2A;
+  stroke: black;
+  stroke-width:1px;
+  transition: fill 0.3s;
+  cursor: pointer;
+}
+
+.hover path{
+  fill: #F56B2A;
+}
+.hover{
+  color:#F56B2A;
+}
