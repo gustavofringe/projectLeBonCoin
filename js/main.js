@@ -20,3 +20,13 @@ $(document).ready(function () {
         $(links).removeClass('hover');
     });
 });
+(function ($) {
+    $('#header-icon').click(function (e) {
+        e.preventDefault();
+        $('body').toggleClass('with--sidebar');
+    })
+    $('#site-hidden').click(function (e) {
+        $('body').removeClass('with--sidebar');
+    })
+
+})(jQuery);

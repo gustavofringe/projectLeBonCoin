@@ -5,19 +5,8 @@
 
 @import "compass";
 @import "header";
-html, body{
-  font-family: sans-serif;
-  font-size: 16px;
-  line-height:1.4;
-  height: 100%;
-
-  margin: 0;
-  padding: 0;
-}
-.map {
-  width: 50%;
-  float: left;
-
+.title{
+  font-size: 12px;
 }
 .map path{
   fill: #3D6ABE;
@@ -40,4 +29,8 @@ html, body{
 }
 .hover{
   color:#F56B2A;
+}
+
+.site-content{
+  padding-top: 110px;
 }
