@@ -97,6 +97,7 @@ tablet landscape format
       color: white;
     }
     button{
+      margin-left: 90px;
       display: inline-block;
       background-color: inherit;
       border: none;
@@ -116,15 +117,22 @@ tablet landscape format
     display: none;
   }
   .menu-header{
+    @include transform(translateX(180px));
+    width: 100%;
+    background-color: #F56B2A;
     display: inline-block;
     ul{
       margin: 0;
       padding: 0;
       li{
+        border:1px solid transparent;
+        height: 56px;
+        vertical-align: middle;
         display: inline-block;
         list-style-type: none;
         a{
-          padding: 0 10px;
+          font-size: 13px;
+          letter-spacing: -0.5px;
           &:hover{
             text-decoration: underline;
             color: white;
@@ -136,7 +144,8 @@ tablet landscape format
   .container{
     @include clearfix;
     .header-logo{
-      font-size: 20px;
+      margin: 0;
+      font-size: 25px;
       font-weight:bold;
       padding: 0 10px;
       color: white;

@@ -131,6 +131,7 @@ tablet landscape format
   }
   /* line 99, ../sass/_header.scss */
   .header button {
+    margin-left: 90px;
     display: inline-block;
     background-color: inherit;
     border: none;
@@ -138,7 +139,7 @@ tablet landscape format
     border-left: 1px solid wheat;
     color: white;
   }
-  /* line 106, ../sass/_header.scss */
+  /* line 107, ../sass/_header.scss */
   .header button i {
     vertical-align: middle;
   }
@@ -146,48 +147,59 @@ tablet landscape format
   /*=============================================================
   nav menu header
   ================================================================*/
-  /* line 115, ../sass/_header.scss */
+  /* line 116, ../sass/_header.scss */
   .header-icon {
     display: none;
   }
 
-  /* line 118, ../sass/_header.scss */
+  /* line 119, ../sass/_header.scss */
   .menu-header {
+    -moz-transform: translateX(180px);
+    -ms-transform: translateX(180px);
+    -webkit-transform: translateX(180px);
+    transform: translateX(180px);
+    width: 100%;
+    background-color: #F56B2A;
     display: inline-block;
   }
-  /* line 120, ../sass/_header.scss */
+  /* line 124, ../sass/_header.scss */
   .menu-header ul {
     margin: 0;
     padding: 0;
   }
-  /* line 123, ../sass/_header.scss */
+  /* line 127, ../sass/_header.scss */
   .menu-header ul li {
+    border: 1px solid transparent;
+    height: 56px;
+    vertical-align: middle;
     display: inline-block;
     list-style-type: none;
   }
-  /* line 126, ../sass/_header.scss */
+  /* line 133, ../sass/_header.scss */
   .menu-header ul li a {
-    padding: 0 10px;
+    font-size: 13px;
+    letter-spacing: -0.5px;
   }
-  /* line 128, ../sass/_header.scss */
+  /* line 136, ../sass/_header.scss */
   .menu-header ul li a:hover {
     text-decoration: underline;
     color: white;
   }
 
-  /* line 136, ../sass/_header.scss */
+  /* line 144, ../sass/_header.scss */
   .container {
     overflow: hidden;
     *zoom: 1;
   }
-  /* line 138, ../sass/_header.scss */
+  /* line 146, ../sass/_header.scss */
   .container .header-logo {
-    font-size: 20px;
+    margin: 0;
+    font-size: 25px;
     font-weight: bold;
     padding: 0 10px;
     color: white;
   }
-  /* line 143, ../sass/_header.scss */
+  /* line 152, ../sass/_header.scss */
   .container .header-logo:hover {
     text-decoration: none;
   }
