@@ -5,6 +5,12 @@
 
 @import "compass";
 @import "header";
+html{
+  font-family: 'Open Sans', sans-serif;
+}
+.container{@include clearfix;}
+.site-content{
+  padding-top:$height-header;}
 .title{
   font-size: 12px;
 }
