@@ -8,10 +8,25 @@
 html{
   font-family: 'Open Sans', sans-serif;
 }
-.container{@include clearfix;}
+.container{
+  @include clearfix;
+}
 .site-content{
-  padding-top:$height-header;}
+  padding-top: $height-header + 10px;
+}
+/*=====================================================================================
+
+========================================================================================*/
 .title{
+  font-size: 12px;
+  text-align: center;
+  font-weight: bold;
+  line-height: 20px;
+  .orange{
+    color: $bcg-orange;
+  }
+}
+.btn{
   font-size: 12px;
 }
 .map path{
@@ -36,7 +51,17 @@ html{
 .hover{
   color:#F56B2A;
 }
-
-.site-content{
-  padding-top: 110px;
+.btn.btn-secondary.dropdown-toggle{
+  width: 350px !important;
 }
+.text_footer{
+  font-weight:bold;
+  padding-top:15px;
+  line-height: 25px;
+  font-size: 12px;
+  text-align: center;
+}
+footer{
+  background-color: #474747;
+}
+@import "footer";
