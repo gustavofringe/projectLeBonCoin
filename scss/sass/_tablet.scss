@@ -9,6 +9,10 @@ header
   .header-icon{
     display: none;
   }
+  .head{
+    width: 1150px;
+    margin: 0 auto;
+  }
   .header {
       position: fixed;
       left: 0;
@@ -16,14 +20,18 @@ header
       height: $height-header;
       line-height: 66px;
       background-color: $bcg-orange;
+    .header-logo{
+      font-size: 20px;
+    }
       a {
+        font-size: 10px;
         text-decoration: none;
         color: #ffffff !important;
       }
 
   }
   .menu-header {
-    @include transform(translateX(350px));
+    @include transform(translateX(29%));
     display: inline-block;
     width: 100%;
     button {

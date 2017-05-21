@@ -2,10 +2,25 @@
 desktop format
 =======================================================================*/
 @media only screen and (min-width: 1200px) {
-  .menu-header {
-    button {
-      margin-left: 10%;
+  .head{
+    width: 1150px;
+    margin: 0 auto;
+  }
+  .header {
+    .header-logo{
+      font-size: 25px;
     }
+    a {
+      font-size: 15px;
+      padding-right:25px;
+      text-decoration: none;
+      color: #ffffff !important;
+    }
+
+  }
+  .menu-header {
+    @include transform(translateX(35%));
+
   }
   .list-pays {
     ul {
