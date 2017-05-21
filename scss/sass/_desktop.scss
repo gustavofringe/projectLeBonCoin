@@ -1,0 +1,18 @@
+/*======================================================================
+desktop format
+=======================================================================*/
+@media only screen and (min-width: 1200px) {
+  .menu-header {
+    button {
+      margin-left: 10%;
+    }
+  }
+  .list-pays {
+    ul {
+      li {
+        list-style-type: none;
+        text-align: right;
+      }
+    }
+  }
+}

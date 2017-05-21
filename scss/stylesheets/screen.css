@@ -178,12 +178,17 @@ button
 /* line 149, ../sass/screen.scss */
 .btn {
   font-size: 12px;
+  display: inline-block;
+}
+/* line 152, ../sass/screen.scss */
+.btn i {
+  vertical-align: top;
 }
 
 /*=======================================================================================
 map
 =======================================================================================*/
-/* line 155, ../sass/screen.scss */
+/* line 159, ../sass/screen.scss */
 .map path {
   fill: #3D6ABE;
   stroke: black;
@@ -192,7 +197,7 @@ map
   transition: fill 0.3s;
 }
 
-/* line 163, ../sass/screen.scss */
+/* line 167, ../sass/screen.scss */
 .map path:hover {
   fill: #F56B2A;
   stroke: black;
@@ -201,30 +206,30 @@ map
   cursor: pointer;
 }
 
-/* line 171, ../sass/screen.scss */
+/* line 175, ../sass/screen.scss */
 .hover path {
   fill: #F56B2A;
 }
 
-/* line 174, ../sass/screen.scss */
+/* line 178, ../sass/screen.scss */
 .hover {
   color: #F56B2A;
 }
 
-/* line 177, ../sass/screen.scss */
+/* line 181, ../sass/screen.scss */
 .btn.btn-secondary.dropdown-toggle {
-  width: 350px !important;
+  width: 300px !important;
 }
 
-/* line 181, ../sass/screen.scss */
+/* line 185, ../sass/screen.scss */
 .dropdown.btn-group.dropup .dropdown-menu {
-  width: 350px !important;
+  width: 300px !important;
 }
 
 /*=======================================================================================
 text before footer
 =========================================================================================*/
-/* line 188, ../sass/screen.scss */
+/* line 192, ../sass/screen.scss */
 .text_footer {
   font-weight: bold;
   padding-top: 15px;
@@ -232,45 +237,48 @@ text before footer
   font-size: 12px;
   text-align: center;
 }
-/* line 194, ../sass/screen.scss */
+/* line 198, ../sass/screen.scss */
 .text_footer .blue {
   color: #336699 !important;
+}
+
+/* line 202, ../sass/screen.scss */
+.nav-footer {
+  display: none;
 }
 
 /*==========================================================================
 footer
 ============================================================================*/
-/* line 201, ../sass/screen.scss */
+/* line 208, ../sass/screen.scss */
 footer {
   padding-top: 25px;
   height: 75px;
   background-color: #474747;
 }
-/* line 205, ../sass/screen.scss */
+/* line 212, ../sass/screen.scss */
 footer .rs {
   height: 20px;
   padding-left: 10px;
 }
+/* line 216, ../sass/screen.scss */
+footer .nav-footer-bottom {
+  display: none;
+}
 
+/*=======================================================
+tablet landscape format
+=========================================================*/
 @media only screen and (min-width: 1024px) {
-  /* line 3, ../sass/_tablet.scss */
-  .container {
-    overflow: hidden;
-    *zoom: 1;
-  }
-
-  /* line 6, ../sass/_tablet.scss */
-  .site-content {
-    padding-top: 30px;
-    overflow: hidden;
-  }
-
-  /* line 10, ../sass/_tablet.scss */
+  /*=========================================================
+  header
+  ============================================================*/
+  /* line 9, ../sass/_tablet.scss */
   .header-icon {
     display: none;
   }
 
-  /* line 13, ../sass/_tablet.scss */
+  /* line 12, ../sass/_tablet.scss */
   .header {
     position: fixed;
     left: 0;
@@ -279,7 +287,7 @@ footer .rs {
     line-height: 66px;
     background-color: #F56B2A;
   }
-  /* line 20, ../sass/_tablet.scss */
+  /* line 19, ../sass/_tablet.scss */
   .header a {
     text-decoration: none;
     color: #ffffff !important;
@@ -287,15 +295,17 @@ footer .rs {
 
   /* line 25, ../sass/_tablet.scss */
   .menu-header {
-    -moz-transform: translateX(200px);
-    -ms-transform: translateX(200px);
-    -webkit-transform: translateX(200px);
-    transform: translateX(200px);
+    -moz-transform: translateX(350px);
+    -ms-transform: translateX(350px);
+    -webkit-transform: translateX(350px);
+    transform: translateX(350px);
     display: inline-block;
     width: 100%;
   }
   /* line 29, ../sass/_tablet.scss */
   .menu-header button {
+    position: relative;
+    padding-left: 25px;
     height: 70px;
     display: inline-block;
     border-style: none;
@@ -306,19 +316,119 @@ footer .rs {
     vertical-align: middle;
     color: white;
   }
-  /* line 40, ../sass/_tablet.scss */
+  /* line 41, ../sass/_tablet.scss */
+  .menu-header button i {
+    position: absolute;
+    top: 20px;
+    left: 0;
+  }
+  /* line 47, ../sass/_tablet.scss */
   .menu-header a {
     display: inline-block;
     border-bottom: 0px;
     padding: 0 5px;
     text-transform: uppercase;
   }
-  /* line 45, ../sass/_tablet.scss */
+  /* line 52, ../sass/_tablet.scss */
   .menu-header a:hover {
     color: grey;
   }
-  /* line 49, ../sass/_tablet.scss */
+  /* line 56, ../sass/_tablet.scss */
   .menu-header .orange {
     display: none;
+  }
+
+  /*================================================================
+container
+  ====================================================================*/
+  /* line 63, ../sass/_tablet.scss */
+  .container {
+    overflow: hidden;
+    *zoom: 1;
+  }
+
+  /* line 66, ../sass/_tablet.scss */
+  .site-content {
+    padding-top: 30px;
+  }
+
+  /* line 69, ../sass/_tablet.scss */
+  .btn.btn-secondary.dropdown-toggle {
+    width: 800px !important;
+  }
+
+  /* line 73, ../sass/_tablet.scss */
+  .dropdown.btn-group.dropup .dropdown-menu {
+    width: 800px !important;
+  }
+
+  /*=================================================================================
+  footer
+  =====================================================================================*/
+  /* line 80, ../sass/_tablet.scss */
+  .nav-footer {
+    background-color: #F2F2F2;
+    display: block;
+  }
+  /* line 83, ../sass/_tablet.scss */
+  .nav-footer a {
+    font-size: 10px;
+    color: #336699 !important;
+    line-height: 6px;
+  }
+  /* line 88, ../sass/_tablet.scss */
+  .nav-footer .part {
+    padding-bottom: 10px;
+  }
+  /* line 91, ../sass/_tablet.scss */
+  .nav-footer .title-nav {
+    line-height: 15px;
+    text-transform: uppercase;
+    border-bottom: 1px solid grey;
+  }
+
+  /* line 97, ../sass/_tablet.scss */
+  footer {
+    color: white;
+    height: 300px;
+  }
+  /* line 100, ../sass/_tablet.scss */
+  footer .nav-footer-bottom {
+    font-size: 10px;
+    display: block;
+  }
+  /* line 102, ../sass/_tablet.scss */
+  footer .nav-footer-bottom .title-nav {
+    font-size: 15px;
+    text-transform: uppercase;
+    line-height: 20px;
+    border-bottom: 1px solid white;
+  }
+  /* line 108, ../sass/_tablet.scss */
+  footer .nav-footer-bottom .parteners {
+    border-bottom: 1px solid white;
+    border-top: 1px solid white;
+    padding-top: 11px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  /* line 115, ../sass/_tablet.scss */
+  footer .nav-footer-bottom .nav-link {
+    color: white;
+  }
+}
+/*======================================================================
+desktop format
+=======================================================================*/
+@media only screen and (min-width: 1200px) {
+  /* line 6, ../sass/_desktop.scss */
+  .menu-header button {
+    margin-left: 10%;
+  }
+
+  /* line 14, ../sass/_desktop.scss */
+  .list-pays ul li {
+    list-style-type: none;
+    text-align: right;
   }
 }

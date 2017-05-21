@@ -148,6 +148,10 @@ button
 =====================================================================================*/
 .btn{
   font-size: 12px;
+  display: inline-block;
+  i{
+    vertical-align: top;
+  }
 }
 /*=======================================================================================
 map
@@ -175,11 +179,11 @@ map
   color:#F56B2A;
 }
 .btn.btn-secondary.dropdown-toggle{
-  width: 350px !important;
+  width: 300px !important;
 }
 .dropdown.btn-group.dropup{
   .dropdown-menu{
-    width: 350px !important;
+    width: 300px !important;
   }
 }
 /*=======================================================================================
@@ -195,6 +199,9 @@ text before footer
     color: rgb(51, 102, 153) !important;
   }
 }
+.nav-footer{
+  display: none;
+}
 /*==========================================================================
 footer
 ============================================================================*/
@@ -206,5 +213,8 @@ footer{
     height: 20px;
     padding-left:10px;
   }
+  .nav-footer-bottom{
+    display: none;}
 }
 @import "tablet";
+@import "desktop";
