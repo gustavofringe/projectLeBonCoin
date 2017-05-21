@@ -1,0 +1,53 @@
+@media only screen and (min-width: 1024px) {
+
+  .container{
+    @include clearfix;
+  }
+  .site-content{
+    padding-top: 30px;
+    overflow: hidden;
+  }
+  .header-icon{
+    display: none;
+  }
+  .header {
+    position: fixed;
+    left: 0;
+    right: 0;
+    height: $height-header;
+    line-height: 66px;
+    background-color: $bcg-orange;
+    a {
+      text-decoration: none;
+      color: #ffffff !important;
+    }
+  }
+  .menu-header {
+    @include transform(translateX(200px));
+    display: inline-block;
+    width: 100%;
+    button {
+      height: $height-header;
+      display: inline-block;
+      border-style: none;
+      border-left: 1px solid white;
+      border-right: 1px solid white;
+      background-color: transparent;
+      text-align: center;
+      vertical-align: middle;
+      color: white;
+    }
+    a {
+      display: inline-block;
+      border-bottom:0px;
+      padding: 0 5px;
+      text-transform: uppercase;
+      &:hover {
+        color: grey;
+      }
+    }
+    .orange {
+      display: none;
+    }
+  }
+}

@@ -2,222 +2,188 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-/* line 5, ../sass/_header.scss */
-.header {
-  position: fixed;
-  left: 0;
-  right: 0;
-  height: 70px;
-  line-height: 66px;
-  background-color: #F56B2A;
-}
-/* line 12, ../sass/_header.scss */
-.header a {
-  text-decoration: none;
-  color: #ffffff !important;
-}
-
-/* line 17, ../sass/_header.scss */
-.header-logo {
-  font-weight: bold;
-  font-size: 25px;
-  padding: 0 15px;
-  float: left;
-}
-/* line 22, ../sass/_header.scss */
-.header-logo img {
-  height: 60px;
-}
-
-/* line 26, ../sass/_header.scss */
-.menu-header {
-  float: left;
-}
-/* line 28, ../sass/_header.scss */
-.menu-header button {
-  border-style: none;
-  border-left: 1px solid white;
-  border-right: 1px solid white;
-  background-color: transparent;
-  text-align: center;
-  vertical-align: middle;
-  color: white;
-}
-/* line 37, ../sass/_header.scss */
-.menu-header a {
-  padding: 0 5px;
-  text-transform: uppercase;
-}
-/* line 40, ../sass/_header.scss */
-.menu-header a:hover {
-  color: grey;
-}
-/* line 44, ../sass/_header.scss */
-.menu-header .orange {
-  display: none;
-}
-
-/*==============================================================
-mobile
-================================================================*/
-@media only screen and (max-width: 1000px) {
-  /* line 52, ../sass/_header.scss */
-  .site-content {
-    position: absolute;
-    top: 70px;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    padding-top: 0;
-    overflow-y: scroll;
-    -webkit-overflow-scrolling: touch;
-  }
-
-  /* line 63, ../sass/_header.scss */
-  .header-icon {
-    position: relative;
-    display: block;
-    float: left;
-    margin: 15px 0 0 15px;
-    width: 80px;
-    height: 40px;
-    cursor: pointer;
-    background-color: #fff;
-    -moz-border-radius: 4px;
-    -webkit-border-radius: 4px;
-    border-radius: 4px;
-  }
-  /* line 73, ../sass/_header.scss */
-  .header-icon:after {
-    content: 'MENU';
-    color: #F56B2A;
-    position: absolute;
-    display: block;
-    width: 22px;
-    height: 0;
-    top: -10px;
-    left: 16px;
-  }
-
-  /* line 84, ../sass/_header.scss */
-  .menu-header {
-    position: absolute;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    background-color: #34667e;
-    width: 250px;
-    -moz-transform: translateX(-250px);
-    -ms-transform: translateX(-250px);
-    -webkit-transform: translateX(-250px);
-    transform: translateX(-250px);
-    -moz-transition-duration: 0.3s;
-    -o-transition-duration: 0.3s;
-    -webkit-transition-duration: 0.3s;
-    transition-duration: 0.3s;
-  }
-  /* line 93, ../sass/_header.scss */
-  .menu-header a, .menu-header button {
-    display: block;
-    height: 40px;
-    line-height: 40px;
-    border-bottom: 1px solid grey;
-  }
-
-  /* line 101, ../sass/_header.scss */
-  .with--sidebar .menu-header {
-    background-color: #F2F2F2;
-    -moz-transform: translateX(0px);
-    -ms-transform: translateX(0px);
-    -webkit-transform: translateX(0px);
-    transform: translateX(0px);
-    z-index: 2;
-  }
-  /* line 102, ../sass/_header.scss */
-  .with--sidebar .menu-header .orange {
-    text-align: center;
-    background-color: #F56B2A;
-    font-weight: bold;
-    color: white !important;
-    display: block;
-  }
-  /* line 108, ../sass/_header.scss */
-  .with--sidebar .menu-header .orange:hover {
-    color: white !important;
-  }
-  /* line 112, ../sass/_header.scss */
-  .with--sidebar .menu-header button {
-    color: #336699 !important;
-    text-align: left;
-    text-transform: uppercase;
-    width: 250px;
-  }
-  /* line 117, ../sass/_header.scss */
-  .with--sidebar .menu-header button:hover {
-    color: #F56B2A !important;
-    cursor: pointer;
-  }
-  /* line 121, ../sass/_header.scss */
-  .with--sidebar .menu-header button i {
-    display: none;
-  }
-  /* line 125, ../sass/_header.scss */
-  .with--sidebar .menu-header a {
-    text-align: left;
-    color: #336699 !important;
-  }
-  /* line 128, ../sass/_header.scss */
-  .with--sidebar .menu-header a:hover {
-    color: #F56B2A !important;
-    text-decoration: none;
-  }
-  /* line 137, ../sass/_header.scss */
-  .with--sidebar .site-hidden {
-    position: absolute;
-    left: 250px;
-    bottom: 0;
-    right: 0;
-    top: 0;
-    background-color: rgba(0, 0, 0, 0.3);
-  }
-}
-/* line 8, ../sass/screen.scss */
+/*==========================================================
+variables
+=============================================================*/
+/* line 13, ../sass/screen.scss */
 html {
   font-family: 'Open Sans', sans-serif;
-}
-
-/* line 11, ../sass/screen.scss */
-.container {
-  overflow: hidden;
-  *zoom: 1;
-}
-
-/* line 14, ../sass/screen.scss */
-.site-content {
-  padding-top: 80px;
 }
 
 /*=====================================================================================
 
 ========================================================================================*/
 /* line 20, ../sass/screen.scss */
+.site-content {
+  position: absolute;
+  top: 70px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding-top: 0;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* line 31, ../sass/screen.scss */
+.header {
+  position: static;
+  left: 0;
+  right: 0;
+  height: 70px;
+  line-height: 66px;
+  background-color: #F56B2A;
+}
+
+/* line 39, ../sass/screen.scss */
+.header-icon {
+  position: relative;
+  display: block;
+  float: left;
+  margin: 15px 0 0 15px;
+  width: 80px;
+  height: 40px;
+  cursor: pointer;
+  background-color: #fff;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+}
+/* line 49, ../sass/screen.scss */
+.header-icon:after {
+  content: 'MENU';
+  color: #F56B2A;
+  position: absolute;
+  display: block;
+  width: 22px;
+  height: 0;
+  top: -10px;
+  left: 16px;
+}
+
+/* line 60, ../sass/screen.scss */
+.header-logo {
+  font-weight: bold;
+  font-size: 25px;
+  padding: 0 15px;
+  float: left;
+  color: white;
+}
+/* line 66, ../sass/screen.scss */
+.header-logo img {
+  height: 60px;
+}
+
+/* line 70, ../sass/screen.scss */
+.menu-header {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 250px;
+  -moz-transform: translateX(-250px);
+  -ms-transform: translateX(-250px);
+  -webkit-transform: translateX(-250px);
+  transform: translateX(-250px);
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+/* line 78, ../sass/screen.scss */
+.menu-header a, .menu-header button {
+  display: block;
+  height: 40px;
+  line-height: 40px;
+  border-bottom: 1px solid grey;
+}
+
+/* line 86, ../sass/screen.scss */
+.with--sidebar .menu-header {
+  background-color: #F2F2F2 !important;
+  -moz-transform: translateX(0px);
+  -ms-transform: translateX(0px);
+  -webkit-transform: translateX(0px);
+  transform: translateX(0px);
+  z-index: 2;
+}
+/* line 87, ../sass/screen.scss */
+.with--sidebar .menu-header .orange {
+  text-align: center;
+  background-color: #F56B2A;
+  font-weight: bold;
+  color: white !important;
+  display: block;
+}
+/* line 93, ../sass/screen.scss */
+.with--sidebar .menu-header .orange:hover {
+  color: white !important;
+}
+/* line 97, ../sass/screen.scss */
+.with--sidebar .menu-header button {
+  border: none;
+  color: #336699 !important;
+  background-color: #fff;
+  text-align: left;
+  text-transform: uppercase;
+  width: 250px;
+}
+/* line 104, ../sass/screen.scss */
+.with--sidebar .menu-header button:hover {
+  color: #F56B2A !important;
+  cursor: pointer;
+}
+/* line 108, ../sass/screen.scss */
+.with--sidebar .menu-header button i {
+  display: none;
+}
+/* line 112, ../sass/screen.scss */
+.with--sidebar .menu-header a {
+  text-align: left;
+  color: #336699 !important;
+}
+/* line 115, ../sass/screen.scss */
+.with--sidebar .menu-header a:hover {
+  color: #F56B2A !important;
+  text-decoration: none;
+}
+/* line 124, ../sass/screen.scss */
+.with--sidebar .site-hidden {
+  position: absolute;
+  left: 250px;
+  bottom: 0;
+  right: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+/*==========================================================================================
+title main
+============================================================================================*/
+/* line 137, ../sass/screen.scss */
 .title {
   font-size: 12px;
   text-align: center;
   font-weight: bold;
   line-height: 20px;
 }
-/* line 25, ../sass/screen.scss */
+/* line 142, ../sass/screen.scss */
 .title .orange {
   color: #F56B2A;
 }
 
-/* line 29, ../sass/screen.scss */
+/*==================================================================================
+button
+=====================================================================================*/
+/* line 149, ../sass/screen.scss */
 .btn {
   font-size: 12px;
 }
 
-/* line 32, ../sass/screen.scss */
+/*=======================================================================================
+map
+=======================================================================================*/
+/* line 155, ../sass/screen.scss */
 .map path {
   fill: #3D6ABE;
   stroke: black;
@@ -226,7 +192,7 @@ html {
   transition: fill 0.3s;
 }
 
-/* line 40, ../sass/screen.scss */
+/* line 163, ../sass/screen.scss */
 .map path:hover {
   fill: #F56B2A;
   stroke: black;
@@ -235,22 +201,30 @@ html {
   cursor: pointer;
 }
 
-/* line 48, ../sass/screen.scss */
+/* line 171, ../sass/screen.scss */
 .hover path {
   fill: #F56B2A;
 }
 
-/* line 51, ../sass/screen.scss */
+/* line 174, ../sass/screen.scss */
 .hover {
   color: #F56B2A;
 }
 
-/* line 54, ../sass/screen.scss */
+/* line 177, ../sass/screen.scss */
 .btn.btn-secondary.dropdown-toggle {
   width: 350px !important;
 }
 
-/* line 57, ../sass/screen.scss */
+/* line 181, ../sass/screen.scss */
+.dropdown.btn-group.dropup .dropdown-menu {
+  width: 350px !important;
+}
+
+/*=======================================================================================
+text before footer
+=========================================================================================*/
+/* line 188, ../sass/screen.scss */
 .text_footer {
   font-weight: bold;
   padding-top: 15px;
@@ -258,13 +232,93 @@ html {
   font-size: 12px;
   text-align: center;
 }
-
-/* line 64, ../sass/screen.scss */
-footer {
-  background-color: #474747;
+/* line 194, ../sass/screen.scss */
+.text_footer .blue {
+  color: #336699 !important;
 }
 
-/* line 1, ../sass/_footer.scss */
+/*==========================================================================
+footer
+============================================================================*/
+/* line 201, ../sass/screen.scss */
 footer {
+  padding-top: 25px;
+  height: 75px;
   background-color: #474747;
+}
+/* line 205, ../sass/screen.scss */
+footer .rs {
+  height: 20px;
+  padding-left: 10px;
+}
+
+@media only screen and (min-width: 1024px) {
+  /* line 3, ../sass/_tablet.scss */
+  .container {
+    overflow: hidden;
+    *zoom: 1;
+  }
+
+  /* line 6, ../sass/_tablet.scss */
+  .site-content {
+    padding-top: 30px;
+    overflow: hidden;
+  }
+
+  /* line 10, ../sass/_tablet.scss */
+  .header-icon {
+    display: none;
+  }
+
+  /* line 13, ../sass/_tablet.scss */
+  .header {
+    position: fixed;
+    left: 0;
+    right: 0;
+    height: 70px;
+    line-height: 66px;
+    background-color: #F56B2A;
+  }
+  /* line 20, ../sass/_tablet.scss */
+  .header a {
+    text-decoration: none;
+    color: #ffffff !important;
+  }
+
+  /* line 25, ../sass/_tablet.scss */
+  .menu-header {
+    -moz-transform: translateX(200px);
+    -ms-transform: translateX(200px);
+    -webkit-transform: translateX(200px);
+    transform: translateX(200px);
+    display: inline-block;
+    width: 100%;
+  }
+  /* line 29, ../sass/_tablet.scss */
+  .menu-header button {
+    height: 70px;
+    display: inline-block;
+    border-style: none;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    background-color: transparent;
+    text-align: center;
+    vertical-align: middle;
+    color: white;
+  }
+  /* line 40, ../sass/_tablet.scss */
+  .menu-header a {
+    display: inline-block;
+    border-bottom: 0px;
+    padding: 0 5px;
+    text-transform: uppercase;
+  }
+  /* line 45, ../sass/_tablet.scss */
+  .menu-header a:hover {
+    color: grey;
+  }
+  /* line 49, ../sass/_tablet.scss */
+  .menu-header .orange {
+    display: none;
+  }
 }
