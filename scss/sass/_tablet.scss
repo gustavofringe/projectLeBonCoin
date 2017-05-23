@@ -1,0 +1,129 @@
+/*=======================================================
+tablet landscape format
+=========================================================*/
+@media only screen and (min-width: 1024px) {
+/*=========================================================
+header
+============================================================*/
+
+  .header-icon{
+    display: none;
+  }
+  .head{
+    width: 1150px;
+    margin: 0 auto;
+  }
+  .header {
+      position: fixed;
+      left: 0;
+      right: 0;
+      height: $height-header;
+      line-height: 66px;
+      background-color: $bcg-orange;
+    .header-logo{
+      font-size: 20px;
+    }
+      a {
+        font-size: 10px;
+        text-decoration: none;
+        color: #ffffff !important;
+      }
+
+  }
+  .menu-header {
+    @include transform(translateX(29%));
+    display: inline-block;
+    width: 100%;
+    button {
+      position: relative;
+      padding-left:25px;
+      height: $height-header;
+      display: inline-block;
+      border-style: none;
+      border-left: 1px solid white;
+      border-right: 1px solid white;
+      background-color: transparent;
+      text-align: center;
+      vertical-align: middle;
+      color: white;
+      i{
+        position: absolute;
+        top: 20px;
+        left: 0;
+      }
+    }
+    a {
+      display: inline-block;
+      border-bottom:0px;
+      padding: 0 5px;
+      text-transform: uppercase;
+      &:hover {
+        color: grey;
+      }
+    }
+    .orange {
+      display: none;
+    }
+  }
+  /*================================================================
+container
+  ====================================================================*/
+  /*.container{
+    @include clearfix;
+  }*/
+  .site-content{
+    padding-top: 30px;
+  }
+  .btn.btn-secondary.dropdown-toggle{
+    width: 800px !important;
+  }
+  .dropdown.btn-group.dropup{
+    .dropdown-menu{
+      width: 800px !important;
+    }
+  }
+  /*=================================================================================
+  footer
+  =====================================================================================*/
+  .nav-footer{
+    background-color: #F2F2F2;
+    display: block;
+    a{
+      font-size: 10px;
+      color: rgb(51, 102, 153) !important;
+      line-height: 6px;
+    }
+    .part{
+      padding-bottom:10px;
+    }
+    .title-nav{
+      line-height: 15px;
+      text-transform: uppercase;
+      border-bottom: 1px solid grey;
+    }
+  }
+  footer{
+    color: white;
+    height: 300px;
+    .nav-footer-bottom{
+      font-size: 10px;
+      .title-nav{
+        font-size: 15px;
+        text-transform: uppercase;
+        line-height: 20px;
+        border-bottom:1px solid white;
+      }
+      .parteners{
+        border-bottom:1px solid white;
+        border-top:1px solid white;
+        padding-top: 11px;
+        text-align: center;
+        margin-bottom:10px;
+      }
+      .nav-link{
+        color: white;
+      }
+      display: block;
+    }
+  }
+}
