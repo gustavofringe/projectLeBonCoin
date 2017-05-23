@@ -352,12 +352,9 @@ tablet landscape format
   /*================================================================
 container
   ====================================================================*/
-  /* line 71, ../sass/_tablet.scss */
-  .container {
-    overflow: hidden;
-    *zoom: 1;
-  }
-
+  /*.container{
+    @include clearfix;
+  }*/
   /* line 74, ../sass/_tablet.scss */
   .site-content {
     padding-top: 30px;
@@ -452,10 +449,10 @@ desktop format
 
   /* line 21, ../sass/_desktop.scss */
   .menu-header {
-    -moz-transform: translateX(35%);
-    -ms-transform: translateX(35%);
-    -webkit-transform: translateX(35%);
-    transform: translateX(35%);
+    -moz-transform: translateX(30%);
+    -ms-transform: translateX(30%);
+    -webkit-transform: translateX(30%);
+    transform: translateX(30%);
   }
 
   /* line 27, ../sass/_desktop.scss */
