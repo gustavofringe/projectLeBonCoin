@@ -352,9 +352,12 @@ tablet landscape format
   /*================================================================
 container
   ====================================================================*/
-  /*.container{
-    @include clearfix;
-  }*/
+  /* line 71, ../sass/_tablet.scss */
+  .container {
+    overflow: hidden;
+    *zoom: 1;
+  }
+
   /* line 74, ../sass/_tablet.scss */
   .site-content {
     padding-top: 30px;
